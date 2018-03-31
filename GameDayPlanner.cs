@@ -10,13 +10,13 @@ namespace PartyPlanner
     {
         static void Main(string[] args)
         {
-            Person Rich = new Person("Rich", 30, "brown", 1.5f);           
-            Rich.PrintPerson();
-            Console.ReadKey();
+            Console.WriteLine("Who is Down to Clown? [Please enter player names, separated by a comma]");
+            string players = Console.ReadLine();
+            Console.WriteLine("Where will the clowning go down? [Please select from the following options]\n1. Grosse Pointe Park \n2. Royal Oak \n3. Detroit");
+            int location = Convert.ToInt32(Console.ReadLine());
 
-            Person Elena = new Person("Elena", 33, "brown");
-            Elena.PrintPerson();
-            Console.ReadKey();
+            Players listOfPlayers = new Players(players);
         }
     }
 }
+

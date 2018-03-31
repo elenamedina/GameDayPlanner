@@ -4,9 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp2
+namespace PartyPlanner
 {
-    class Class1
-    {
+    public class Players
+    {           
+        public List<string> players;
+        public Players(string thePlayers)          
+        {
+            string[] userInput = thePlayers.Split(',');
+            players = userInput.ToList();            
+        }        
     }
 }
