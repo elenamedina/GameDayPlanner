@@ -8,7 +8,7 @@ namespace PartyPlanner
 {
     class GameDayPlanner
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Console.WriteLine("Who is Down to Clown? [Please enter player names, separated by a comma]");
             string players = Console.ReadLine();
@@ -16,6 +16,9 @@ namespace PartyPlanner
             int location = Convert.ToInt32(Console.ReadLine());
 
             Players listOfPlayers = new Players(players);
+            listOfPlayers.PrintPlayers();
+
+            Location gamingPlace = new Location(location);
         }
     }
 }

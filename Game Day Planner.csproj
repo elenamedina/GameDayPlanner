@@ -49,6 +49,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Location.cs" />
     <Compile Include="GameDayPlanner.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Players.cs" />
